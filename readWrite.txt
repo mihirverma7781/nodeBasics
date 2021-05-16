@@ -1,0 +1,2 @@
+This is tut for core modules, welcome to first file creation 
+hello i am fine thankyou
