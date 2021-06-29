@@ -1,0 +1,33 @@
+Mihir Verma is learning node 
+[nodemon] starting `node index.js`
+Mihir Verma is learning node 
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+[nodemon] restarting due to changes...
+Mihir Verma
+
+[nodemon] starting `node index.js`
+Mihir Verma
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+[nodemon] restarting due to changes...
+Mihir
+Sunil
+Verma
+[nodemon] starting `node index.js`
+Mihir
+Sunil
+Verma
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node index.js`
+[nodemon] restarting due to changes...
+the status code is 200 and page is ok
+[nodemon] starting `node index.js`
+the status code is 200 and page is ok
+[nodemon] clean exit - waiting for changes before restart
+
+hp@GERAULT MINGW64 /d/programming/nodejs/eventModule (main)
+WE ARE USING TYPE-2
