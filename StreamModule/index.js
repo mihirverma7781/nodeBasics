@@ -12,7 +12,7 @@ server.on("request", (req, res) => {
     const rstream = fs.createReadStream("input.txt");
 
 
-    // type-----1
+    // type-----2
     // rstream.on('data',(chunkdata)=>{
     //     res.write(chunkdata);
     // });
@@ -24,8 +24,9 @@ server.on("request", (req, res) => {
     //     res.end("file not found");
     // })
 
-    // type--------2
+    // type--------3
     rstream.pipe(res);
+    // it connects readale and writable streams
 
 });
 
