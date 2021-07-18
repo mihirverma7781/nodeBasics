@@ -13,7 +13,7 @@ const fs = require("fs")
 // })
 
 // fs.readFile("bio.txt","utf-8",(err,res)=>{
-//     console.log(`this is the data \n\n ${res}\n\n`)
+//     console.log(`this is the data \n\n ${}\n\n`)
 // })
 
 // fs.rename("bio.txt","mybio.txt",(err)=>{
