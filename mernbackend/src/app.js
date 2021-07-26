@@ -56,6 +56,27 @@ app.get('/login',async (req, res)=>{
 })
 
 
+// login validation
+app.post('/login',async (req, res)=>{
+    try{
+        const email = req.body.email;
+        const password = req.body.password;
+        const validate = await Register.findOne({email:email});
+        if(validate.password===password){
+            res.status(200).render("index");
+        }
+        else{
+            res.status(404).send("email / password is not valid");  
+        }
+        console.log(validate.password);
+
+    }
+    catch(err){
+        res.status(400).send("invalid email");
+    }
+})
+
+
 app.listen(port,()=>{
     console.log("listening on port"+ port);
 })
