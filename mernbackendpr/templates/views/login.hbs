@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar{
+    height: 9vh;
+    /* border: 2px solid black; */
+    width: 100%;
+    background-color: #00366b;
+    padding-left: 5rem;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    color: #A2DBFA;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.main-div{
+    padding: 0 5rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.form-div{
+    border-radius: 10px;
+    padding: 2rem 4rem;
+    background-color: #0A1931;
+    color:white ;
+}
+.list-div{
+    width: 50%;
+    display: flex;    
+    justify-content: center;
+}
+h3{
+    color: #A2DBFA;
+    font-size: 2rem;
+}
+.form{
+    margin: 1rem 0;
+}
+.elems{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.8rem;
+}
+
+label{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+input{
+    width: 20rem;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+input[type="radio"]{
+    width: 5rem;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+}
+.btns{
+    margin-top: 30px;
+}
+button{
+    width: 5rem;
+    padding: 10px 10px;
+}
+button[type=submit]{
+    background-color: green;
+    color: white;
+    font-weight:600 ;
+    border: none;
+    border-radius: 5px;
+}
+button[type=reset]{
+    background-color: red;
+    color: white;
+    font-weight:600 ;
+    border: none;
+    border-radius: 5px;
+}
+.listitems{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 2rem;
+}
+
+#image {
+    line-height: 1.5em;
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/treehouse-marker.png);
+  }
+  .links{
+      margin-left: 5rem;
+      font-size:1.2rem;
+  }
+  a{
+    text-decoration: none;
+    color : white;
+    margin: 0 1rem;
+  }
+
+.elem-r{
+    display:flex;
+  width: 100%;
+  align-items: center;
+}
+    </style>
+    <title>MEAN STACK TASK-1</title>
+  </head>
+  <body>
+{{>navbar}}
+
+    <div class="main-div">
+      <div class="form-div">
+          <h3>Login Form</h3>
+        <form action="/login"  method="post">
+          <div class="form">
+            <div class="elems">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="input-elem"
+                placeholder="Enter E-mail"
+              />
+            </div>
+            <div class="elems">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="input-elem"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div class="btns">
+              <button type="submit">Login</button>
+              <button type="reset">Reset</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
